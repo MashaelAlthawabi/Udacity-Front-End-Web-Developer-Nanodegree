@@ -1,0 +1,148 @@
+@import './navBar.css';
+@import './footer.css';
+@import './blog.css';
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nav'
+    'intro'
+    'blogs'
+    'footer';
+  grid-template-rows: 20px, 100px, 210px, 10px;
+
+  gap: 10px;
+  padding: 10px;
+}
+
+.card-img {
+  width: 240px;
+  height: 180px;
+  align-items: center;
+}
+
+h1 {
+  margin: 30px;
+  padding-left: 60px;
+}
+
+h2 {
+  color: blueviolet;
+}
+
+.card {
+  box-shadow: 0 1px 20px 0 rgba(14, 13, 14, 0.2);
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  flex-flow: row;
+  grid-template-rows: 300px 300px 210px;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 20px, 20px, 100px;
+
+
+}
+
+.blogs {
+  margin: 10px;
+  display: grid;
+  grid-template-areas:
+    'card'
+    'card'
+    'card';
+  gap: 10px;
+  padding: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+
+
+}
+.button {
+  align-items: right;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.card-text {
+  padding-top: 60px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  font-size: large;
+}
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  position: fixed bottom;
+  height: 70px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  border-top: 2px solid rgba(14, 13, 14, 0.2);
+}
+
+.info {
+  display: grid;
+  grid-template-areas:
+    'h2'
+    'p'
+    'p';
+  grid-template-rows: 50px, 50px, 200px, 200px;
+  gap: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 20px 0 rgba(14, 13, 14, 0.2);
+  margin: 50px;
+  padding: 150px;
+}
+
+@media (max-width: 320px){
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'nav'
+      'intro'
+      'blogs'
+      'footer';
+      grid-template-rows: 20px, 80px, 150px, 10px;
+      gap: 10px;
+    padding: 10px;
+  }
+}
+@media (min-width: 600px) and (max-width:900px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'nav'
+      'intro'
+      'blogs'
+      'footer';
+      grid-template-rows: 200px, 200px, 190px, 10px;
+      gap: 10px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 901px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'nav'
+      'intro'
+      'blogs'
+      'footer';
+      grid-template-rows: 20px, 100px, 210px, 10px;
+      gap: 10px;
+    padding: 10px;
+  }
+}
