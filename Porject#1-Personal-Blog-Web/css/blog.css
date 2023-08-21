@@ -9,15 +9,13 @@
 .blogGrid {
   display: grid;
   grid-template-areas:
-    'blogImage'
+    'blogImage '
     'contentText'
     'contentText';
-  grid-template-rows: 50px, 50px, 200px;
-  gap: 10px;
-  padding: 10px;
-  box-shadow: 0 1px 20px 0 rgba(14, 13, 14, 0.2);
+  grid-template-rows: 0.2fr 0.2fr 0.2fr;
   margin: 50px;
-  padding: 150px;
+  gap: 1rem;
+  padding: 10px;
 }
 
 .blogImage {
@@ -36,30 +34,19 @@
 }
 @media (max-width: 320px){
   .blogGrid {
-    display: grid;
-    grid-template-areas:
-      'blogImage'
-      'contentText'
-      'contentText';
-    grid-template-rows: 50px, 50px, 200px;
-    gap: 10px;
-    padding: 10px;
-    box-shadow: 0 1px 20px 0 rgba(14, 13, 14, 0.2);
-    margin: 50px;
-    padding: 150px;
+    grid-template-rows: 50px;
+  }
+  .blogImage{
+    width: 70%;
+    align-items: center;
+
   }
 }
 @media (min-width: 600px) and (max-width:900px) {
   .blogGrid {
-    display: grid;
-    grid-template-areas:
-      'blogImage'
-      'contentText'
-      'contentText';
-    grid-template-rows: 50px, 50px, 200px;
+    grid-template-rows: 50px, 50px, 50px;
     gap: 10px;
     padding: 10px;
-    box-shadow: 0 1px 20px 0 rgba(14, 13, 14, 0.2);
     margin: 50px;
     padding: 150px;
   }
@@ -67,15 +54,9 @@
 
 @media (min-width: 901px) {
   .blogGrid {
-    display: grid;
-    grid-template-areas:
-      'blogImage'
-      'contentText'
-      'contentText';
-    grid-template-rows: 50px, 50px, 200px;
+    grid-template-rows: 50px, 50px, 50;
     gap: 10px;
     padding: 10px;
-    box-shadow: 0 1px 20px 0 rgba(14, 13, 14, 0.2);
     margin: 50px;
     padding: 150px;
   }
