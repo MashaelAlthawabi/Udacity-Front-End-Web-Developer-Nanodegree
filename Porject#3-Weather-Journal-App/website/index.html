@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Journal App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <nav>Weather Journal App</nav>
+      <div class="zip">
+        <label class="label"> Enter Zipcode here</label>
+        <input type="text" id="zip" />
+        <small id="error"></small>
+      </div>
+      <div>
+        <label class="label"> How are you feeling today?</label>
+        <textarea id="feelings" rows="9" cols="50"></textarea>
+        <button id="generate" type="submit">Generate</button>
+      </div>
+      <div id="card">
+        <div class="title">Weather info</div>
+        <div id="cardContent">
+          <div id="temp"></div>
+          <div id="city"></div>
+          <div id="content"></div>
+          <div id="date"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
